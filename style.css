@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/tlo.png);
+}
+
+#header-conteiner{
+    margin-top: 1.7vw;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 4px rgb(58, 57, 56);
+    border-radius: 15px;
+    grid-area: header;
+}
+header{
+    margin-left: 5vw;
+    font-size: 4vw;
+    color: aliceblue;
+    width: 43vw;
+}
+
+#header-conteiner img{
+    width: 43vw; 
+}
+
+#main-conteiner{
+    width: 86vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    display: grid;
+    grid-template-columns: 36vw 50vw;
+    grid-template-areas: 
+    "header header"
+    "menu menu"
+    "about-me news";
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(31, 29, 29);
+    border: solid 4px rgb(58, 57, 56);
+    margin-top: 0.5vw;
+    border-radius: 15px;
+    grid-area: menu;
+}
+
+#logo{
+    padding: 0 4vw;
+    font-size: 1.5vw;
+}
+
+ul a{
+    color: white;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 1.1vw;
+}
+
+
+#about-me{
+    color: white;
+    background-color: rgba(73, 71, 71, 0.938);
+    border: solid 4px rgb(58, 57, 56);
+    margin-top: 0.5vw;
+    border-radius: 15px; 
+    grid-area: about-me; 
+    margin-right: 0.5vw;
+    padding: 0.5vw;
+    text-align: center;
+    font-size: 1.3vw;
+    max-height: 600px;
+}
+
+#about-me img{ 
+    width: 18vw;
+    margin-right: 1vw;
+    border: solid 4px rgb(31, 30, 30);
+    border-radius: 15px; 
+    float:left;
+    
+}
+
+#news{
+    background-color: rgba(199, 189, 189, 0.925);
+    border: solid 4px rgb(58, 57, 56);
+    margin-top: 0.5vw;
+    border-radius: 15px;  
+    grid-area: news;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.8vw;
+}
+
+.news-element{
+    border: solid 2px rgb(58, 57, 56);
+    border-radius: 12px;
+    background-color: rgb(233, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+    text-align: center;
+    height: 29vw;
+    font-size: 1.3vw;
+    margin-bottom: 0.5vw;
+}
+
+h1,h2{
+    height: 2vw;
+    font-size: 2.8vw;
+    padding-bottom: 4vh;
+}
+
+h3{
+    font-size: 1.6vw;  
+}
+
+.news-element img{
+    border-radius: 12px; 
+    width: 44vw;
+    cursor: pointer;
+}
+
+.news-element:hover{
+    background-color: rgba(121, 111, 111, 0.918);
+}
+
+footer{
+    background-color: rgb(46, 45, 45);
+    color: white;
+    text-align: center;
+    margin-top: 0.5vw;
+    padding: 0.5vw;
+    font-size: 1.2vw;
+    max-height: 30px;
+    height: 6vh;
+}
