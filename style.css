@@ -49,6 +49,12 @@ header{
     grid-area: menu;
 }
 
+.active{
+    background-color: gray;
+    border: solid 2px ;
+    border-radius: 5px;
+}
+
 #logo{
     padding: 0 4vw;
     font-size: 1.5vw;
@@ -56,10 +62,10 @@ header{
 
 ul a{
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0 1.1vw;
+    padding: 0 1.8vw;
 }
 
 
@@ -74,7 +80,7 @@ ul a{
     padding: 0.5vw;
     text-align: center;
     font-size: 1.3vw;
-    max-height: 600px;
+    height: 45vw;
 }
 
 #about-me img{ 
@@ -82,8 +88,7 @@ ul a{
     margin-right: 1vw;
     border: solid 4px rgb(31, 30, 30);
     border-radius: 15px; 
-    float:left;
-    
+    float:left;  
 }
 
 #news{
@@ -97,6 +102,12 @@ ul a{
     flex-direction: column;
     padding: 0.8vw;
 }
+
+#news a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+    font-size: 1.3vw;
+}   
 
 .news-element{
     border: solid 2px rgb(58, 57, 56);
@@ -140,6 +151,216 @@ footer{
     margin-top: 0.5vw;
     padding: 0.5vw;
     font-size: 1.2vw;
-    max-height: 30px;
-    height: 6vh;
+    max-height: 40px;
+    height: 8vh;
+}
+
+#content{
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+#review{
+    display: grid;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.5vw;
+}
+
+#review img{
+    width: 26vw;
+    max-height: 30vw;
+    margin: .5vw;
+    border-radius: 10px;
+    border: solid gray 3px;
+    transition: .5s;
+}
+
+#review img:hover{
+    width: 30vw;
+    border-radius: 10px;
+    border: solid rgb(8, 8, 8) 3px;
+}
+
+#ranking-content{
+    display: grid;
+    grid-template-columns: 40vw 44vw;
+    grid-template-areas:
+    "introduction table";
+    padding: 0.8vw;
+} 
+
+#introduction{
+    grid-area: introduction;
+    background-color: rgba(211, 211, 211, 0.897);
+    padding: 1vw;
+    border: solid 4px rgb(58, 57, 56);
+    border-radius: 15px;
+    font-size: 1.2vw;
+}
+
+h5{
+    font-size: 1.6vw;
+    text-align: center;
+}
+
+#introduction img{
+    width: 37vw;
+    border-radius: 10px;
+    margin-top: 2vw;
+    box-shadow: 0 0 1.5vw rgb(90, 88, 88);
+    height: 20vw;
+}
+
+#table{
+    grid-area: table;
+    margin-left: 0.8vw;
+    background-color: rgba(150, 147, 147, 0.897);
+    padding: 1vw;
+    border: solid 4px rgb(58, 57, 56);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3vw;
+    height: 34vw;
+}
+
+table{
+    border-collapse: collapse;
+    min-width: 40vw;
+    background-color: rgb(243, 240, 240);
+    overflow: hidden;
+    box-shadow: 0 0 2vw rgb(63, 61, 61);
+}
+
+thead tr{
+    background-color: rgb(110, 41, 41);
+}
+
+#table th, #table td {
+    padding: 0.9vw 1.1vw;
+}
+
+tbody tr {
+    border:solid 2px rgb(105, 105, 105);
+}
+
+td a{
+    text-decoration: none;
+    color: #000;
+}
+
+tbody tr:nth-of-type(even){
+    background-color: rgb(199, 190, 190);
+} 
+
+#review-text , #form-content{
+    background-color: rgba(150, 147, 147, 0.897);
+    margin-top: .5vw;
+    padding: 5vw;
+    border: solid 4px rgb(58, 57, 56);
+    border-radius: 15px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 56vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+}
+
+#review-text img{
+    width: 35vw;
+    margin: 1vw;
+    border-radius: 15px; 
+    box-shadow: 0 0 1vw rgb(63, 61, 61);
+}
+
+#review-text a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: rgb(117, 54, 9);
+}
+
+h6{
+    font-size: 2vw;
+    color: rgb(172, 93, 37);
+    text-align: center;
+}
+
+#note-text{
+    text-align: center;
+}
+
+form{
+    box-shadow: 0 0 1vw rgb(63, 61, 61);
+    background-color: rgba(29, 28, 28, 0.7);
+    border: solid 3px rgba(65, 64, 64, 0.7) ;
+    border-radius: 15px;
+    width: 52vw;
+    height: 30vw;
+    padding: 3vw;
+    display: flex;
+    color: whitesmoke;
+}
+
+#input-fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+}
+
+#ckeckboxs-conteiner{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+
+
+
+#input-fields input{
+    
+    font-size: 1.4vw;
+    margin: 1vw 0;
+    background: transparent;
+    border: 0;
+    width: 18vw;
+    height: 3vw;
+    border-bottom: .3vw solid whitesmoke;
+    padding: .7vw;
+    color: whitesmoke;
+}
+::-webkit-input-placeholder{
+    color: whitesmoke;
+}
+
+.checkbox{
+    cursor: pointer;
+}
+
+select, button, #button-conteiner input{
+    padding: .5vw .7vw;
+    color: rgb(238, 232, 232);
+    background-color: rgba(29, 27, 27, 0.699);
+    width: 12vw;
+    cursor: pointer;
 }
