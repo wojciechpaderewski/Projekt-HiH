@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+    <xs:element name="whisky-blog">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="logo" type="logoType"/>
+                <xs:element name="menu" type="menuType"/>
+                <xs:element name="content" type="contentType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="logoType">
+        <xs:sequence>
+            <xs:element name="logoText" type="shortStringType" maxOccurs="1" />
+            <xs:element name="image" type="linkType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="menuType">
+        <xs:sequence>
+            <xs:element name="logoText" type="shortStringType" maxOccurs="1" />
+            <xs:element name="menuOption" type="optionType" minOccurs="2" maxOccurs="10"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="optionType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="active" type="activeType" default="no"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="shortStringType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="40"/>
+            <xs:minLength value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="longStringType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="120"/>
+            <xs:minLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="linkType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="source" type="xs:anyURI" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="activeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value = "yes|no"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="logoType">
+        <xs:sequence>
+            <xs:element name="logoText" type="shortStringType" maxOccurs="1" />
+            <xs:element name="image" type="linkType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="contentType" mixed="true">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="header" type="shortStringType"/>
+                <xs:element name="review" type="reviewType"/>
+                <xs:element name="table" type="tableType"/>
+                <xs:element name="form" type="formType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="reviewType" mixed="true">
+		<xs:sequence>
+			<xs:element name="subtitle" type="longStringType"/>
+            <xs:element name="image" type="linkType"/>
+            <xs:element name="reviewLink" type="linkType"/>
+            <xs:element name="text" type="textType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+    <xs:complexType name="textType" mixed="true">
+		<xs:sequence>
+			<xs:element name="subtitle" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+</xs:schema>

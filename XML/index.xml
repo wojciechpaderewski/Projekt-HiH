@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<whisky-blog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="whiskySchema.xsd">
+
+   <logo>
+        <logoText>Paderewski&amp;Whisky</logoText>
+        <image source="naglowek.jpg"></image>
+   </logo>
+
+   <menu>
+        <logoText>Paderewski&amp;Whisky</logoText>
+        <menuOption active="yes">Strona Główna</menuOption>
+        <menuOption>Recenzje</menuOption>
+        <menuOption>Ranking</menuOption>
+        <menuOption>Newsletter</menuOption>
+   </menu>
+
+</whisky-blog>
