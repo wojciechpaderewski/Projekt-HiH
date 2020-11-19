@@ -2,17 +2,233 @@
 <whisky-blog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:noNamespaceSchemaLocation="whiskySchema.xsd">
 
-   <logo>
-        <logoText>Paderewski&amp;Whisky</logoText>
-        <image source="naglowek.jpg"></image>
-   </logo>
+     <author>   
+          <personalData>
+               <name>Wojciech</name>
+               <surname>Paderewski</surname>
+          </personalData>    
+          <image source="miller.jpg"/>
+          <description>
+               Nazywam się Tomasz Miler. Jestem pasjonatem whisky i alkoholi starzonych. Z wykształcenia jestem biotechnologiem i tłumaczem konferencyjnym.
+               Te dwie perspektywy: zrozumienie procesów technologicznych oraz języka kultury, w której powstaje whisk(e)y pozwalają mi widzieć ją w sposób inny niż inni.
+               Moja przygoda z popularyzowaniem wiedzy whisky zaczęła się ponad 10 lat temu, bo w 2009 roku, kiedy to nagrałem pierwsze filmy na serwis YouTube. Filmy te spotkały się z ciepłym przyjęciem Internautów, ale z jakiegoś powodu nie kontynuowałem nagrywania. Zacząłem wtedy pisać o whisk(e)y do różnych gazet, a później otworzyłem MilerPije.pl, aby po kilku ładnych latach blogowania pisemnie, w 2018 roku powrócić na YouTube i w dość krótkim czasie dojść do zawrotnej (jak dla mnie!) liczby 100.000 subskrybentów! Kontakt ze mną:
+          </description>  
+          <email>info@spiritsandstyle.com</email>
+     </author>
+     <whiskys whiskysCount="6"> 
+          <whisky isProduced="true" rank="2" category="SingleMalt" country="Scotland">
+               <whiskyParameters>
+                    <whiskyName>Glenfiddich</whiskyName>
+                    <age>15</age>
+                    <region>Spayside</region>
+                    <vol>40</vol>
+               </whiskyParameters>
+               <story>
+                    Whisky Glenfiddich 15 yo Solera ma długa historię, która zaskarbiła tej destylarni wielu zwolenników. Przez lata na rynku pojawiło się kilka wersji, a ja dzisiaj omówię dla Was edycję „Our Solera Fifteen”, której premiera miała miejsce w 2019 roku.
+                    Oczywiście najsławniejszą whisky ze stajni destylarni Glenfiddich jest Glenfiddich 12 yo. Być może jednak najbardziej cenioną za wysoki stosunek jakości do ceny jest Glenfiddich 15 yo, która od połowy 2019 roku nazywa się „Our Solera Fifteen”, a wcześniej nazywała się „Solera Reserve” i „Solera Vat”.
+                    Do leżakowania Glenfiddich Solera Fifteen wykorzystuje się 3 rodzaje beczek:
+                    - po bourbonie – ponownego wypełnienia
+                    - beczki po sherry
+                    - z dębu wcześniej nieużywanego
 
-   <menu>
-        <logoText>Paderewski&amp;Whisky</logoText>
-        <menuOption active="yes">Strona Główna</menuOption>
-        <menuOption>Recenzje</menuOption>
-        <menuOption>Ranking</menuOption>
-        <menuOption>Newsletter</menuOption>
-   </menu>
+                    Po leżakowaniu w wymienionych beczkach, Glenfiddich leżakuje dodatkowo w szczególny sposób. Jest on interpretacją sławnego procesu solera wykorzystywanego do leżakowania hiszpańskiego wina wzmacnianego sherry. Destylaty Glenfiddich z różnych beczek poddawane są kupażowi w ogromnej kadzi, która nigdy nie jest opróżniania bardziej niż do połowy. Ponieważ Glenfiddich 15 yo po raz pierwszy pojawiła się na rynku w 1998 roku, kadź do leżakowania w systemie solera dla wersji 15yo nigdy nie została jeszcze opróżniona!
+               </story>
+               <image source="glenfidich.jpg" ></image>
+               <link source="glenfidich.html"/>
+               <tasteNote>
+                    <Color>Jasny olej</Color>
+                    <Smell>
+                         Mleczna czekolada, karmelowe cukierki, powidła śliwkowe, cola, likier jajeczny,marcepan, sherry Pedro Ximenez, stare drewno na starym strychu (czuję jakbym przechadzał się po piwnicach destylarni i wąchał ten cudowny zapach). Alkohol świetnie ukryty.
+                    </Smell>
+                    <Taste>
+                         Orzechy Pekan, cappuccino, półwytrawne Sherry, kolorowy pieprz, maliny, rodzynki, dojrzałe, soczyste gruszki, skórka limonki, imbir. Niestety, trochę wodnista, ale i tak smakuje rewelacyjnie
+                    </Taste>
+                    <Finish>
+                         Zaskakująco długi jak na filtrowaną na zimno, butelkowaną w mocy 40% Whisky. Imbir, goździki, karmel,
+                    </Finish>
+               </tasteNote>
+               <rating>
+                    <scoreRate>83</scoreRate>
+                    <starRate>***</starRate>
+               </rating>
+          </whisky>
+
+          <whisky isProduced="true" rank="1" category="SingleMalt" country="Scotland">
+               <whiskyParameters>
+                    <whiskyName>Lagavulin</whiskyName>
+                    <age>16</age>
+                    <region>Islay</region>
+                    <vol>43.2</vol>
+               </whiskyParameters>
+               <story>
+                    Lagavulin 16 yo to potężnie dymna whisky, która powszechnie uważana jest za wspaniały destylat. Dzisiaj wydaje się niewiarygodnym, że destylarnia Lagavulin została stworzona, aby kopiować sąsiadującą z nią Laphroaig. Wtedy niestety, a dzisiaj na szczęście, nie udało się tego osiągnąć i powstała whisky, która powszechnie uchodzi za najbardziej nobliwą na całej Islay.
+                    Historia destylarni Lagavulin sięga 1816 roku kiedy to John Jonston i Archibald Campbell zbudowali dwie destylarnie w tym samym miejscu, które później połączyły się w jedną. Nazwa Lagavulin pochodzi od galeickiego Lag a Mhuillin co oznacza „młyn w dolinie”.
+                    Lagavulin wchodzi w skład Classic Malts (pozostałe whisky w tej „rodzinie” to: Cragganmore, Dalwhinnie, Glenkinchie, Oban i Talisker), czyli whisky wspólnie promowanych przez DIAGEO – alkoholowego kolosa i właściciela marki Johnnie Walker, o którym wspominałem już wielokrotnie na łamach bloga.
+
+                    Wiele mówi się też o tym, że dzisiejsza Lagavulin to ofiara wielkiego popytu i, że nie jest już tym czym była 30-40 lat temu. Może i tak, ale nostalgia leży w naturze człowieka, a rzeczywistość jest taka, że powszechnie dostępna jest tylko współcześnie produkowana Lagavulin więc należy skupiać się na niej.     
+               </story>
+               <image source="lagavulin.jpg" ></image>
+               <link source="lagavulin.html"/>
+               <tasteNote>
+                    <Color>Bursztyn</Color>
+                    <Smell>
+                         Lotna – pachnie cały pokój. Torfowa, ale nie w taki sposób jak Laphroaig. Nie eksploduje dymem tylko delikatnie go uwalnia w całej palecie innych aromatów. Pojawia się zatem winność, morskość, miód i suszone owoce
+                    </Smell>
+                    <Taste>
+                         Na języku jest oleista, rozgrzewająca, ale nie mocno pieprzna jak w przypadku młodych whisky
+                    </Taste>
+                    <Finish>
+                         Finisz to eksplozja torfu, która zaczyna się z siłą zbliżoną do Laphroaiga. Jednak już po chwili widać, że jest ona ujarzmiona szesnastoletnim leżakowaniem. Czyni to „Lagę” nieco bardziej łagodnym maltem i pozwala mu długo wybrzmiewać w ustach
+                    </Finish>
+               </tasteNote>
+               <rating>
+                    <scoreRate>86</scoreRate>
+                    <starRate>****</starRate>
+               </rating>
+          </whisky>
+
+           <whisky isProduced="true" rank="3" category="SingleMalt" country="Scotland">
+               <whiskyParameters>
+                    <whiskyName>Laphroaig</whiskyName>
+                    <age>10</age>
+                    <region>Islay</region>
+                    <vol>42.5</vol>
+               </whiskyParameters>
+               <story>
+                    Nazwa Laphroaig (wymawiaj. lafrojg) oznacza „piękna dziupla nad szeroką zatoką” choć tak naprawdę mogłaby być synonimem słowa ‚torfowy’. Nie ma chyba innej marki whisky, której serce leży tak głęboko w dymie. W Polsce największą popularnością cieszy się w tej chwili Laphroaig Quarter Cask, ale do tego przeglądu wybrałem wersję 10 yo. Co się odwlecze to nie uciecze…
+
+                    Destylarnia Laphroaig została założona na Islay, niedaleko miasteczka Port Ellen przez Alexa i Donalda Johnstonów w 1815 roku. Laphroaig jest jedyną szkocką whisky, która otrzymała patent dostawcy od Karola – Księcia Walii – który podobno umiłował sobie nieprodukowaną już wersję piętnastoletnią. Laphroaig słynie także z inicjatywy Friends of Laphroaig. Każdy może zostać właścicielem kawałka ziemi na terenie destylarni, za którą destylarnią płaci darmową miniaturką whisky jeden raz na rok…pod warunkiem, że wpadniesz ją odebrać.
+
+                    Laphroaig jest jedną z kilku destylarni, które cały czas słodują część swojego jęczmienia i suszą go nad palącym się torfem. Warto odwiedzić destylarnię i zobaczyć jak wygląda ten proces.Torf na Isaly jest wyjątkowy i daje niepowtarzalną kompozycję fenoli w whisky. Może to właśnie dlatego Laphroaig jest tak piorunująco pełna smaku? Zatorfienie tej whisky waha się w okolicach 40 ppm. Ostatnio wspominałem o prohibicji. Dla Laphoroaig to okres dość wyjątkowy ponieważ jej sprzedaż w USA była legalna! Trzeba tylko zaznaczyć, że nie kupowało się jej w sklepie monopolowym,a w aptece. Władze USA uznały, że whisky ta jest tak silna w swoim dymnym i szpitalnym smaku, że nikt nie będzie stosować jej jako alkoholu do upijania się i potraktowano ją jako środek na trawienie 🙂
+                    
+               </story>
+               <image source="Laphroaig.jpg" ></image>
+               <link source="Laphroaig.html"/>
+               <tasteNote>
+                    <Color>Jasnobursztynowa</Color>
+                    <Smell>
+                         Wyjątkowo intensywny zapach, lotna whisky, z daleka mocno dymna, z bliska…bardziej dymna. Niepodobna do CI, która spod torfu pokazywała akcenty cytrusowe. Zapach dymu jest naprawdę silny
+                    </Smell>
+                    <Taste>
+                        Ją prawie można ugryźć. Jest gęsta, ale nie oleista, wytrawna, dymna, rozgrzewająca. Wiele whisky w tym wieku cechuje pieprzność, która ukrywa alkohol. Laphroaig 10yo tego nie ma. Tutaj po prostu czuć ciepło tej whisky. Dym miesza się z bardzo gorzką czekoladą i drewnem
+                    </Taste>
+                    <Finish>
+                         Finisz to eksplozja torfu, który długo gasnie
+                    </Finish>
+               </tasteNote>
+               <rating>
+                    <scoreRate>82</scoreRate>
+                    <starRate>***</starRate>
+               </rating>
+          </whisky>
+
+           <whisky isProduced="true" rank="4" category="SingleMalt" country="Scotland">
+               <whiskyParameters>
+                    <whiskyName>Glendronach</whiskyName>
+                    <age>12</age>
+                    <region>Spayside</region>
+                    <vol>42</vol>
+               </whiskyParameters>
+               <story>
+                    Dzisiaj spotkanie z jedną z destylarni, które bez wątpienia kojarzą się z beczkami po sherry. Ponieważ Glendronach 12 yo to jedna z najbardziej popularnych whisky wśród początkujących miłosników maltów, koniecznie musimy się jej przyjrzeć!
+
+                    Glendronach to po gaelicku „jeżynowa dolina” (I to w sumie jedna z niewielu nazw, która ma coś wspólnego z rzeczywistością, bo smak jeżyn w sherrowym Glendronachu z pewnością odnajdziemy). Destylarnię założył James Allardice, który uzyskał licencję w 1826 roku, ale jak wiadomo, wcześniej przez dłuższy czas proceder odbywał się na nielegalu. Pierwsze wzmianki o „hobbystycznej działalności” pochodzą z 1771 roku.
+
+                    Elementem wyróżniającym położoną na granicy Speyside i wschodniej części Highlands Glendronach jest kultywowane do dzisiaj leżakowanie whisky prawie wyłącznie w beczkach po sherry. Podstawowym "maltem" w ofercie zakładu jest Glendronach 12 yo Original komponowany z minimum 12-letnich destylatów starzonych w beczkach po sherry Oloroso i Pedro Ximenez, zabutelkowanych z mocą 43%, bez dodatku karmelu oraz bez filtracji na zimno.          
+               </story>
+               <image source="Glendronach.jpg" ></image>
+               <link source="Glendronach.html"/>
+               <tasteNote>
+                    <Color>Jasny bursztyn</Color>
+                    <Smell>
+                         Czereśnie, bita śmietana z sosem karmelowym, Sherry, czekolada, pomarańcza, imbir, dojrzałe śliwki, goździki. Alkohol dość dobrze ukryty
+                    </Smell>
+                    <Taste>
+                        Baaaaaardzo klarowny. Na początku pestki jabłek, potem czekolada, Advocaat, cukierki „Kukułki”, syrop klonowy, cukier muscovado, cynamon, orzechy laskowe
+                    </Taste>
+                    <Finish>
+                         Długi i przyjemny. Gorzka czekolada, rukola, miód, drewno, Sherry, skórka pomarańczy
+                    </Finish>
+               </tasteNote>
+               <rating>
+                    <scoreRate>80</scoreRate>
+                    <starRate>***</starRate>
+               </rating>
+          </whisky>
+
+          <whisky isProduced="true" rank="5" category="blandedWhisky" country="Scotland">
+               <whiskyParameters>
+                    <whiskyName>Johnnie Walker Black Label</whiskyName>
+                    <age>3</age>
+                    <region>Scotland</region>
+                    <vol>40</vol>
+               </whiskyParameters>
+               <story>
+                    Johnnie Walker Black Label to najsławniejszy blend premium na świecie. O whisky tej mówi się, że składa się z około 40 rodzajów whisky, z których najważniejsza to 12 yo Cardhu ze Speyside. Ziemistość i lekką dymność do JWBL wnoszą (podobno) Caol Ila i Talisker.
+
+                    Johnnie Wlaker Black Label to ulbuiona whisky Winstona Churchilla, który podobno zaczął ją pić z wodą podczas jednej z podróży do Afryki, aby chronić przewód pokarmowy przed bakteriami. Widocznie ochrona ta była bardzo skuteczna ponieważ Churchill stosował ją już do końca życia 😉
+
+                    „Jedna z moich podstawowych zasad to picie przed, w trakcie i po posiłku”
+
+                    Do historii przeszły także słowa Churchilla skierowane do Bessi Braddock, która zarzuciła mu pijaństwo:
+
+                    „Jestem pijany – to prawda, ale kiedy rano będę trzeźwy, pani ciągle będzie brzydka”.
+
+                    Elegancko ubrany facet, z kubańskim cygarem w jednej dłoni i szklanką whisky w drugiej. Chyba powinienem powiesić jego plakat nad łóżkiem.        
+               </story>
+               <image source="Black Label.jpg" ></image>
+               <link source="Black Label.html"/>
+               <tasteNote>
+                    <Color>Miedziana</Color>
+                    <Smell>
+                         Niezbyt lotna, delikatna, kremowa, skórzasta, tytoniowa, nie wyczuwam intensywnego zapachu, ale zapach, który wyczuwam bez wątpienia jest bardzo przyjemny
+                    </Smell>
+                    <Taste>
+                         Baaaaaardzo klarowny. Na początku pestki jabłek, potem czekolada, Advocaat, cukierki „Kukułki”, syrop klonowy, cukier muscovado, cynamon, orzechy laskowe
+                    </Taste>
+                    <Finish>
+                         Delikatny finisz, karmelowy z dozą gorzkiej czekolady i minimalną dymnością na końcu. Trochę pieprzny, ale zupełnie pod kontrolą. Doskonale nadaje się do popijania
+                    </Finish>
+               </tasteNote>
+               <rating>
+                    <scoreRate>79</scoreRate>
+                    <starRate>***</starRate>
+               </rating>
+          </whisky>
+
+          <whisky isProduced="true" rank="6" category="blandedWhisky" country="Scotland">
+               <whiskyParameters>
+                    <whiskyName>Johnnie Walker White Walker</whiskyName>
+                    <age>3</age>
+                    <region>Scotland</region>
+                    <vol>40</vol>
+               </whiskyParameters>
+               <story>
+                    Dzisiaj spotkanie z whisky „White Walker”, czyli specjalną wersją Johnnie Walker z Gry o Tron. Serial ten oparty na sadze George’a R.R. Martina pobił chyba wszystkie rekordy popularności przez co przeniknął także do świata alkoholi, gdzie w wyniku współpracy HBO i DIAGEO powstałą seria whisky poświęconych Grze o Tron. Dzisiaj spotkanie z jedną z nich!
+
+                    Whisky Johnnie Walker z Gry o Tron swoją nazwę czerpie od Białych Wędrowców (ang. White Walkers), którzy w serialu są postaciami egzystującymi za murem. Biali wędrowcy w serialu to postaci nieumarłe, które walczą lodowymi włóczniami. Każdy kogo zabiją Biali Wędrowcy staje się jednym z nich. Jak widać, niezbyt mili goście 😀 Ponieważ kojarzą się oni z niekończącą się zimą na dalekiej północy, powstała whisky, która zachęca konsumentów do obniżania temperatury spożycia. Mam nawet wrażenie, że whisky ta działa – zobaczcie co stało się ze mną po degustacji 😉
+
+                    Oczywiście White Walker (Johnnie Walker z Gry o Tron) budzi wiele pytań związanych z temperaturą podania. Whisky to blend bez deklaracji wieku więc spodziewać się można po nim raczej poziomu „do koktajlów”. Poprzez zastosowanie pigmentu termochromatycznego, producent sugeruje jednak podawania w bardzo niskiej temperaturze. Jak wiadomo, kiedy jest bardzo zimno język czuje mniej. Ciekawe zatem jest jak smakuje ta whisky zarówno w temperaturze pokojowej jak i zmrożona. Postanowiłem to sprawdzić w poniższej degustacji!     
+               </story>
+               <image source="White Walker.jpg" ></image>
+               <link source="White Walker.html"/>
+               <tasteNote>
+                    <Color>Jasny olej</Color>
+                    <Smell>
+                         Na pierwszy rzut idą brzoskwinie, toffi i mocny alkohol. W zasadzie, spodziewałem się tego, biorąc po uwagę sugestie producenta, a mianowicie, że tę whisky należy pić mocno zmrożoną. Poza tym, drewno, melasa, gorzka czekolada, marcepan, cappuccino, słony karmel – bardzo wyraźny i bardzo przyjemny
+                    </Smell>
+                    <Taste>
+                         Gorzki, przypalony karmel, wanilia, drewno, orzechy włoskie, słód, czekolada mleczna, odrobina dymu
+                    </Taste>
+                    <Finish>
+                         Drewno, karmel, wanilia, rukola, miód, orzechy włoskie, popiół. Bardzo długi – przynajmniej, kiedy degustuję w temperaturze pokojowej
+                    </Finish>
+               </tasteNote>
+               <rating>
+                    <scoreRate>78</scoreRate>
+                    <starRate>**</starRate>
+               </rating>
+          </whisky>
+     </whiskys>
 
 </whisky-blog>

@@ -4,46 +4,92 @@
     <xs:element name="whisky-blog">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="logo" type="logoType"/>
-                <xs:element name="menu" type="menuType"/>
-                <xs:element name="content" type="contentType"/>
+                <xs:element name="author" type="authorType" />
+                <xs:element name="whiskys" type="whiskysType"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:complexType name="logoType">
+    <xs:complexType name="authorType" mixed="true">
         <xs:sequence>
-            <xs:element name="logoText" type="shortStringType" maxOccurs="1" />
-            <xs:element name="image" type="linkType"/>
+            <xs:element name="personalData" type="personalType"/>
+            <xs:element ref="image" />
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="email" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="30"/>
+                        <xs:minLength value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element >
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="menuType">
+    <xs:complexType name="whiskyType">
         <xs:sequence>
-            <xs:element name="logoText" type="shortStringType" maxOccurs="1" />
-            <xs:element name="menuOption" type="optionType" minOccurs="2" maxOccurs="10"/>
+            <xs:element name="whiskyParameters" type="whiskyParametersType"/>
+            <xs:element name="story" type="xs:string"/>
+            <xs:element ref="image" maxOccurs="5"/>
+            <xs:element ref="link"/> 
+            <xs:element name="tasteNote" type="noteType"/>
+            <xs:element name="rating">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="scoreRate" type="scoreType" maxOccurs="1"/>
+                        <xs:element name="starRate" maxOccurs="1">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="*"/>
+                                    <xs:enumeration value="**"/>
+                                    <xs:enumeration value="***"/>
+                                    <xs:enumeration value="****"/>
+                                </xs:restriction>
+                            </xs:simpleType>  
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType> 
+            </xs:element>
         </xs:sequence>
-    </xs:complexType>
+        <xs:attribute name="isProduced" type="trueFalseType" use="required"/>                                 
+        <xs:attribute name="rank" type="xs:decimal" use="required" /> 
+        <xs:attribute name="category" type="shortStringType" use="required" />   
+        <xs:attribute name="country" type="shortStringType" use="required" />  
+    </xs:complexType>   
 
-    <xs:complexType name="optionType">
-        <xs:simpleContent>
-            <xs:extension base="xs:string">
-                <xs:attribute name="active" type="activeType" default="no"/>
-            </xs:extension>
-        </xs:simpleContent>
-    </xs:complexType>
+    <xs:complexType name="noteType">         
+        <xs:sequence>
+            <xs:element name="Color" type="xs:string" maxOccurs="1"/>
+            <xs:element name="Smell" type="xs:string" maxOccurs="1"/>
+            <xs:element name="Taste" type="xs:string" maxOccurs="1"/>
+            <xs:element name="Finish" type="xs:string" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType> 
 
-    <xs:simpleType name="shortStringType">
+    <xs:simpleType name="trueFalseType">
         <xs:restriction base="xs:string">
-            <xs:maxLength value="40"/>
-            <xs:minLength value="3"/>
+            <xs:pattern value="true|false"/>
         </xs:restriction>
     </xs:simpleType>
+
+    <xs:simpleType name="scoreType">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>  
+
+    <xs:complexType name="whiskysType">
+        <xs:sequence>
+            <xs:element name="whisky" type="whiskyType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="whiskysCount" type="xs:int" use="required" />
+    </xs:complexType>     
 
     <xs:simpleType name="longStringType">
         <xs:restriction base="xs:string">
             <xs:maxLength value="120"/>
-            <xs:minLength value="10"/>
+            <xs:minLength value="5"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -55,45 +101,36 @@
         </xs:simpleContent>
     </xs:complexType>
 
-    <xs:simpleType name="activeType">
+    <xs:element name="link" type="linkType"/>
+    <xs:element name="image" type="linkType"/>
+
+    <xs:simpleType name="shortStringType">
         <xs:restriction base="xs:string">
-            <xs:pattern value = "yes|no"/>
+            <xs:maxLength value="30"/>
+            <xs:minLength value="1"/>
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:complexType name="logoType">
+    <xs:complexType name="personalType">
         <xs:sequence>
-            <xs:element name="logoText" type="shortStringType" maxOccurs="1" />
-            <xs:element name="image" type="linkType"/>
+            <xs:element name="name" type="shortStringType" minOccurs="1" maxOccurs="1" />
+            <xs:element name="surname" type="shortStringType" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="whiskyParametersType">
+        <xs:sequence>
+            <xs:element name="whiskyName" type="shortStringType"/>
+            <xs:element name="age" type="xs:int"/>
+            <xs:element name="region" type="shortStringType"/>
+            <xs:element name="vol" type="volType"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:element name="contentType" mixed="true">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="header" type="shortStringType"/>
-                <xs:element name="review" type="reviewType"/>
-                <xs:element name="table" type="tableType"/>
-                <xs:element name="form" type="formType"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-
-    <xs:complexType name="reviewType" mixed="true">
-		<xs:sequence>
-			<xs:element name="subtitle" type="longStringType"/>
-            <xs:element name="image" type="linkType"/>
-            <xs:element name="reviewLink" type="linkType"/>
-            <xs:element name="text" type="textType"/>
-		</xs:sequence>
-	</xs:complexType>
-
-    <xs:complexType name="textType" mixed="true">
-		<xs:sequence>
-			<xs:element name="subtitle" />
-		</xs:sequence>
-	</xs:complexType>
-
-
-
+    <xs:simpleType name="volType">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="30"/>
+            <xs:maxInclusive value="80"/>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
