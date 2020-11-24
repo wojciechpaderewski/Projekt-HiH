@@ -1,0 +1,35 @@
+<!ELEMENT whisky-blog (author,whiskys)>
+    <!ELEMENT author (personalData | image | description | email)>
+        <!ELEMENT personalData (name,surname)>
+            <!ELEMENT name (#PCDATA)>
+            <!ELEMENT surname (#PCDATA)>
+        <!ELEMENT image EMPTY>
+        <!ELEMENT email (#PCDATA)>
+    <!ELEMENT whiskys (whisky+)>
+        <!ELEMENT whisky (whiskyParameters,story,image,link,tasteNote,rating)>
+            <!ELEMENT whiskyParameters (whiskyName,age,region,vol)>
+                <!ELEMENT whiskyName (#PCDATA)>
+                <!ELEMENT age (#PCDATA)>
+                <!ELEMENT region (#PCDATA)>
+                <!ELEMENT vol (#PCDATA)>
+            <!ELEMENT story (#PCDATA)>
+            <!ELEMENT image EMPTY>
+            <!ELEMENT link EMPTY>
+            <!ELEMENT tasteNote (Color,Smell,Taste,Finish)>
+                <!ELEMENT Color (#PCDATA)>
+                <!ELEMENT Smell (#PCDATA)>
+                <!ELEMENT Taste (#PCDATA)>
+                <!ELEMENT Finish (#PCDATA)>
+            <!ELEMENT rating (scoreRate,starRate)>
+                <!ELEMENT scoreRate (#PCDATA)>
+                <!ELEMENT starRate (#PCDATA)>
+
+<!ATTLIST whiskys whiskyCount CDATA>
+<!ATTLIST whisky isProduced (true | false) "false" #REQUIRED>
+<!ATTLIST whisky rank CDATA #REQUIRED>
+<!ATTLIST whisky category CDATA #REQUIRED>
+<!ATTLIST whisky country CDATA #REQUIRED>
+<!ATTLIST image ENTITY #REQUIRED>
+<!ATTLIST link ENTITY #REQUIRED>
+
+<!ENTITY links SYSTEM "URI/URL">

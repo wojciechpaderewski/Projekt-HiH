@@ -80,7 +80,7 @@ ul a{
     padding: 0.5vw;
     text-align: center;
     font-size: 1.3vw;
-    height: 45vw;
+    height: 60vw;
 }
 
 #about-me img{ 
@@ -361,4 +361,8 @@ select, button, #button-conteiner input{
     background-color: rgba(29, 27, 27, 0.699);
     width: 12vw;
     cursor: pointer;
+}
+
+svg{
+    margin-left: 300px;
 }

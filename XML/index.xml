@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE whisky-blog SYSTEM "whisky.dtd">
 <whisky-blog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:noNamespaceSchemaLocation="whiskySchema.xsd">
 
@@ -9,9 +10,8 @@
           </personalData>    
           <image source="miller.jpg"/>
           <description>
-               Nazywam się Tomasz Miler. Jestem pasjonatem whisky i alkoholi starzonych. Z wykształcenia jestem biotechnologiem i tłumaczem konferencyjnym.
-               Te dwie perspektywy: zrozumienie procesów technologicznych oraz języka kultury, w której powstaje whisk(e)y pozwalają mi widzieć ją w sposób inny niż inni.
-               Moja przygoda z popularyzowaniem wiedzy whisky zaczęła się ponad 10 lat temu, bo w 2009 roku, kiedy to nagrałem pierwsze filmy na serwis YouTube. Filmy te spotkały się z ciepłym przyjęciem Internautów, ale z jakiegoś powodu nie kontynuowałem nagrywania. Zacząłem wtedy pisać o whisk(e)y do różnych gazet, a później otworzyłem MilerPije.pl, aby po kilku ładnych latach blogowania pisemnie, w 2018 roku powrócić na YouTube i w dość krótkim czasie dojść do zawrotnej (jak dla mnie!) liczby 100.000 subskrybentów! Kontakt ze mną:
+               Nazywam się Wojciech Paderewski. Jestem pasjonatem whisky i alkoholi starzonych. Z wykształcenia jestem automtykiem.
+            Jestem pasjonatem whisky w wydaniu single malt. Swoją przygodę z tym rodzajem trunku zacząłem kilka lat temu, kiedy dostałem w prezencie silnie torfową whisky. Był to mój pierwszy świadomy malt. Świadomy, gdyż kiedy go próbowałem wiedziałem mniej więcej co to jest single malt, jak powstaje taka whisky i że jej ojczyzną jest Szkocja. Otworzyłem butelkę i po wcześniej pitych blendach, zazwyczaj z colą i lodem, spotkał mnie szok. Przede wszystkim zadziwiający był zapach, bardzo intensywny i przypominający szpitalne środki czyszczące, czy też pasty do podłóg. Podobnie dziwny był smak, bardzo wędzony i dymny. Aż dziw, że to miało nadawać się do spożycia i do tego sprawiać przyjemność. Wymagało to pewnego samozaparcia, ale w ciągu roku opróżniłem tę butelkę. Przy każdej szklaneczce zacząłem dostrzegać piękno tej whisky i nabierałem przekonania, że jest po prostu wspaniała. I tak się zaczęło, zacząłem powoli wciągać się coraz bardziej. Choć, moim zdaniem, nie był to single malt dla początkujących, jednak stał się moim przewodnikiem w wejściu do Świata Whisky.
           </description>  
           <email>info@spiritsandstyle.com</email>
      </author>
